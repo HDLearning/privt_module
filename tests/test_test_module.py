@@ -6,7 +6,7 @@ print("TESTS LOADED!")
 class TestTestModel(TransactionCase):
 
     def setUp(self, *args, **kwargs):
-        test2
+        #test2
         super(TestTestModel, self).setUp(*args, **kwargs)
         print("Executed!")
         self.TestModel = self.env['test.model']
@@ -16,3 +16,7 @@ class TestTestModel(TransactionCase):
         record = self.TestModel.create({'name': 'Test Record'})
         print("Executed!")
         self.assertEqual(record.name, 'Test Record')
+
+        # Check if the record is created
+        self.assertEqual(record.name, 'Test Branch')
+        self.assertEqual(record.code, 'TB01')
