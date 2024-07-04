@@ -4,7 +4,7 @@ from odoo.tests.common import TransactionCase
 print("TESTS LOADED!")
 
 class TestTestModel(TransactionCase):
-
+    error
     def setUp(self, *args, **kwargs):
         #test2
         super(TestTestModel, self).setUp(*args, **kwargs)
