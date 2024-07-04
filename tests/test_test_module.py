@@ -7,7 +7,7 @@ class TestTestModel(TransactionCase):
     
     def setUp(self, *args, **kwargs):
         #test2
-        print(error)
+        #print(error)
         super(TestTestModel, self).setUp(*args, **kwargs)
         print("Executed!")
         self.TestModel = self.env['test.model']
